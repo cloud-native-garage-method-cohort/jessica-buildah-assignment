@@ -1,5 +1,5 @@
-FROM quay.io/escabechada/myapp as build
-WORKDIR /app
+FROM quay.io/upslopeio/node-alpine
+WORKDIR /myapp
 COPY . .
 RUN npm install
-RUN npm run build
+RUN DEBUG=myapp:* npm start
