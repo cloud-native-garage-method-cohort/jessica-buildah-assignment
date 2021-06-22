@@ -1,4 +1,4 @@
-FROM quay.io/escabechada/node-alpine as build
+FROM quay.io/escabechada/myapp as build
 WORKDIR /app
 COPY . .
 RUN npm install
